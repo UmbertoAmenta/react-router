@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PostCard from "./components/PostCard";
 
 const initialData = {
   titolo: "",
   contenuto: "",
   immagine: "",
-  tags: [],
   dellaTradizione: false,
   difficoltà: "",
   tempistiche: "",
@@ -26,8 +27,6 @@ export default function App() {
     axios
       .post("http://localhost:3000/posts", formData)
       .then(function (response) {
-        // console.log(response.data);
-        // setList(response.data);
         const currentList = [...list, response.data];
         setList((currentList) => [...currentList, response.data]);
         setFormData(initialData);
@@ -49,7 +48,6 @@ export default function App() {
 
   const handlerFormData = (field, value) => {
     setFormData((currentFormData) => {
-      // console.log(currentFormData);
       return { ...currentFormData, [field]: value };
     });
   };
@@ -59,17 +57,11 @@ export default function App() {
     event.preventDefault();
     const currentList = [...list, formData];
     setList(currentList);
-    console.log(currentList);
-
-    // alternative
-    // setList([...list, formData])
-    // setList((current) => [...current, formData]);
 
     setFormData({
       titolo: "",
       contenuto: "",
       immagine: "",
-      tags: [],
       dellaTradizione: false,
       difficoltà: "",
       tempistiche: "",
@@ -91,38 +83,16 @@ export default function App() {
         <ul>
           {list.map((post) => {
             return (
-              <li key={post.id}>
-                <span>{post.titolo}</span>
-                {post.dellaTradizione ? (
-                  <div>Ricetta tradizionale</div>
-                ) : (
-                  <div>Ricetta rivisitata</div>
-                )}
-                <button
-                  type="button"
-                  onClick={() => handlerDeletePost(post.id)}
-                >
-                  🗑️
-                </button>
-                <br />
-                <div className="imgSlot">
-                  <img
-                    // src={
-                    //   `http://localhost:3000/${post.immagine}` || post.immagine
-                    // }
-                    src={"http://localhost:3000/" + post.immagine}
-                    alt={post.titolo}
-                  />
-                </div>
-                <div className="description">{post.contenuto}</div>
-                <div>
-                  <span>{post.difficoltà}</span>
-                  <span>{post.tempistiche}</span>
-                </div>
-                {/* {console.log("http://localhost:3000/" + post.immagine)} */}
-                {/* {console.log(post.immagine)} */}
-                {/* <div>{post.tags || ""}</div> */}
-              </li>
+              <PostCard
+                key={post.id}
+                titolo={post.titolo}
+                contenuto={post.contenuto}
+                immagine={post.immagine}
+                dellaTradizione={post.dellaTradizione}
+                difficoltà={post.difficoltà}
+                tempistiche={post.tempistiche}
+                handlerDeletePost={() => handlerDeletePost(post.id)}
+              />
             );
           })}
         </ul>
