@@ -1,9 +1,6 @@
-import Header from "../components/Header/Index";
-
 export default function AboutUs() {
   return (
     <>
-      <Header />
       <h1>Chi siamo?</h1>
       <p>
         Un associazione di Lorem ipsum, dolor sit amet consectetur adipisicing

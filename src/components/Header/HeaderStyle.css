@@ -1,0 +1,32 @@
+/* HEADER */
+.active {
+  text-shadow: 1px -1px;
+  background-color: lightgray;
+}
+
+header {
+  box-shadow: 1px 1px 10px black;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER NAVBAR */
+header > .container > nav {
+  display: flex;
+  gap: 20px;
+}
+
+header > .container > nav > * {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+header > .container > nav > *:hover:not(.active) {
+  background-color: lightgray;
+}

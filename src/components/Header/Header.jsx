@@ -1,16 +1,16 @@
-import { NavLink } from "react-router-dom";
+import HeadNavBar from "../HeadNavBar";
 
 export default function Header() {
   return (
-    <header className="container">
-      <div>
-        <h1>Le ricette di nonna</h1>
+    <header>
+      <div className="container">
+        <div>
+          <h1>
+            <em>Le ricette di Nonna</em>
+          </h1>
+        </div>
+        <HeadNavBar />
       </div>
-      <nav>
-        <NavLink to="/">Homepage</NavLink>
-        <NavLink to="/about-us">Chi siamo</NavLink>
-        <NavLink to="/recipe-book">Il Ricettario</NavLink>
-      </nav>
     </header>
   );
 }

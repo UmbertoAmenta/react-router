@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 // components
-import Header from "../components/Header/Index";
-import PostCard from "../components/PostCard/Index";
+import PostCard from "../components/PostCard/PostCard";
 import FormPostList from "../components/FormPostList";
 
 const initialData = {
@@ -57,7 +56,6 @@ export default function RecipeBook() {
 
   return (
     <>
-      <Header />
       <div className="container">
         <h2>Le ricette di nonna</h2>
         <div>

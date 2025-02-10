@@ -1,5 +1,3 @@
-import Header from "../components/Header/Index";
-
 export default function HomePage() {
-  return <Header />;
+  return <h1>Sono la HomePAGE</h1>;
 }
