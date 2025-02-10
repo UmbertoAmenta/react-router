@@ -1,0 +1,32 @@
+/* FORM NEW POST-CARD */
+form {
+  position: relative;
+  background-color: lightgray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 6);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+form label {
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+form button {
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin: 25px 0;
+}
+
+form [type="button"] {
+  border-color: red;
+  position: absolute;
+  bottom: 0;
+}

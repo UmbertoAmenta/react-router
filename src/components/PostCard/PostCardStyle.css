@@ -1,0 +1,56 @@
+/* POST-CARD */
+ul li {
+  position: relative;
+  list-style: none;
+  width: calc(100% / 4);
+  padding: 15px;
+  background-size: contain;
+  box-shadow: 1px 1px 10px black;
+}
+
+li span:first-child {
+  font-size: 18px;
+}
+
+li span:first-child + div {
+  text-align: right;
+  font-size: 14px;
+}
+
+ul li .imgSlot {
+  aspect-ratio: 4/3;
+}
+
+ul li img {
+  width: 100%;
+  object-fit: cover;
+}
+
+ul li .description {
+  height: 100px;
+  overflow-y: hidden;
+  padding-right: 5px;
+}
+
+ul li .description:hover {
+  overflow-y: auto;
+}
+
+ul li [type="button"] {
+  border-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 25px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+ul li [type="button"]:hover {
+  cursor: pointer;
+}
+
+li div:last-child {
+  display: flex;
+  justify-content: space-between;
+}

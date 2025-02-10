@@ -1,9 +1,13 @@
 export default function PostCard(post) {
   return (
-    <li key={post.id}>
-      <span>{post.titolo}</span>
+    <li className="card" key={post.id}>
+      <span>
+        <strong>{post.titolo}</strong>
+      </span>
       {post.dellaTradizione ? (
-        <div>Ricetta tradizionale</div>
+        <div>
+          <em>Ricetta tradizionale</em>
+        </div>
       ) : (
         <div>Ricetta rivisitata</div>
       )}

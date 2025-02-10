@@ -8,10 +8,6 @@ export default function FormPostList({
 }) {
   return (
     <form onSubmit={handlerSubmitFormData}>
-      <button type="button" onClick={deleteList}>
-        Svuota ricettario
-      </button>
-
       <label htmlFor="postTitolo">Titolo*</label>
       <input
         id="postTitolo"
@@ -98,6 +94,9 @@ export default function FormPostList({
 
       <button type="submit">
         <strong>+</strong> Aggiungi Ricetta
+      </button>
+      <button type="button" onClick={deleteList}>
+        Svuota ricettario
       </button>
     </form>
   );

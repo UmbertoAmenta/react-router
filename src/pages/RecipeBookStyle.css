@@ -1,0 +1,14 @@
+/* RECIPE BOOK */
+.container > div.flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+ul {
+  margin-bottom: 25px;
+  width: calc((100% / 6) * 5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+}

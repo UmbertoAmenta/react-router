@@ -6,9 +6,9 @@ export default function HomePage() {
         <p>
           <strong>Work in progress</strong>:
           <br />
-          abbiate pazienza, stiamo lavorando sul sito, sui maglioni che fa
-          ancora freddo e a breve lavoreremo sul database per le nostre, ma
-          anche vostre, ricette.
+          ti chiediamo un po di pazienza, stiamo lavorando sul sito e sui
+          maglioni, che fa ancora freddo. Inoltre a breve lavoreremo sul
+          database per le nostre, ma anche vostre, ricette.
         </p>
       </div>
     </>

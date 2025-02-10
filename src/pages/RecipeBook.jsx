@@ -57,8 +57,8 @@ export default function RecipeBook() {
   return (
     <>
       <div className="container">
-        <h2>Le ricette di nonna</h2>
-        <div>
+        <h2>Il Ricettario</h2>
+        <div className="flex">
           <ul>
             {list.map((post) => {
               return (
