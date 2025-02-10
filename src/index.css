@@ -1,4 +1,7 @@
 /* IMPORT CSS */
+/* Pages */
+@import url("/src/pages/AboutUsStyle.css");
+/* Components */
 @import url("/src/components/Header/HeaderStyle.css");
 @import url("/src/components/Footer/FooterStyle.css");
 
@@ -10,6 +13,10 @@
 }
 
 /* GENERAL */
+:root {
+  max-height: 100vh;
+  /* overflow: hidden; */
+}
 .container {
   max-width: 1100px;
   margin: auto;

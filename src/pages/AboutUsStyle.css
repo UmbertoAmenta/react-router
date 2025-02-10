@@ -1,0 +1,18 @@
+/* ABOUT US */
+.contact-us.container > h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.contact-us.container div {
+  margin-top: 20px;
+}
+
+.contact-us.container div > p {
+  padding: 0 5px;
+  margin-top: 5px;
+}
+
+.contact-us.container > div + p {
+  margin: 25px 50px 0;
+}
