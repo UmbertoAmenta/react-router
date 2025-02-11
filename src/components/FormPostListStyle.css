@@ -1,5 +1,5 @@
 /* FORM NEW POST-CARD */
-form {
+form#newPostForm {
   position: relative;
   background-color: lightgray;
   padding: 10px;
@@ -10,7 +10,7 @@ form {
   justify-content: flex-start;
 }
 
-form label {
+form#newPostForm label {
   margin-top: 20px;
 }
 
@@ -19,14 +19,14 @@ input[type="checkbox"] {
   margin-left: 5px;
 }
 
-form button {
+form#newPostForm button {
   padding: 2px 5px;
   border-radius: 5px;
   margin: 25px 0;
 }
 
-form [type="button"] {
+form#newPostForm [type="button"] {
   border-color: red;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }

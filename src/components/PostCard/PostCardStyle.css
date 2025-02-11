@@ -6,10 +6,13 @@ ul li {
   padding: 15px;
   background-size: contain;
   box-shadow: 1px 1px 10px black;
+  border-radius: 15px;
 }
 
-li span:first-child {
+li span:first-child a {
   font-size: 18px;
+  text-decoration: none;
+  color: black;
 }
 
 li span:first-child + div {
@@ -24,6 +27,7 @@ ul li .imgSlot {
 ul li img {
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 4/3;
 }
 
 ul li .description {

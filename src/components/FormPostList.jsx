@@ -7,7 +7,7 @@ export default function FormPostList({
   deleteList,
 }) {
   return (
-    <form onSubmit={handlerSubmitFormData}>
+    <form id="newPostForm" onSubmit={handlerSubmitFormData}>
       <label htmlFor="postTitolo">Titolo*</label>
       <input
         id="postTitolo"

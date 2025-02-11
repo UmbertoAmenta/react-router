@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <>
       <div className="homepage container">
-        <h2>Benvenuto nipotino!</h2>
+        <h2>Benvenuto nipotinə!</h2>
         <p>
           <strong>Work in progress</strong>:
           <br />

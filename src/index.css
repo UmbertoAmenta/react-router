@@ -3,6 +3,8 @@
 @import url("/src/pages/HomePageStyle.css");
 @import url("/src/pages/RecipeBookStyle.css");
 @import url("/src/pages/AboutUsStyle.css");
+@import url("/src/pages/SinglePostPagestyle.css");
+@import url("/src/pages/LoginPageStyle.css");
 /* Layout components */
 @import url("/src/components/Header/HeaderStyle.css");
 @import url("/src/components/Footer/FooterStyle.css");
